@@ -54,14 +54,32 @@ const AnimatedCounter = ({ icon: Icon, number, label, suffix = '' }: AnimatedCou
   }, [isVisible, number]);
 
   return (
-    <div ref={ref} className="text-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-        <Icon className="w-8 h-8 text-white" />
+    <div 
+      ref={ref} 
+      className="relative text-center p-6 bg-gradient-to-br from-gray-900 to-black border border-green-400/30 rounded-lg backdrop-blur-sm hover:bg-gray-800/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-400/25 group"
+    >
+      {/* Cyber Grid Overlay */}
+      <div className="absolute inset-0 cyber-grid opacity-20 rounded-lg"></div>
+      
+      {/* Glowing Border Effect */}
+      <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-green-400/20 to-cyan-400/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      
+      <div className="relative z-10">
+        <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 relative animate-cyber-pulse">
+          <Icon className="w-8 h-8 text-black" />
+          {/* Icon Glow */}
+          <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-cyan-400 rounded-full blur opacity-50 animate-pulse"></div>
+        </div>
+        
+        <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text mb-2 font-mono">
+          {count.toLocaleString()}{suffix}
+        </div>
+        
+        <div className="text-gray-300 font-medium tracking-wide">{label}</div>
+        
+        {/* Scanning Line Effect */}
+        <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-transparent via-green-400 to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div className="text-3xl font-bold text-gray-900 mb-2">
-        {count}{suffix}
-      </div>
-      <div className="text-gray-600">{label}</div>
     </div>
   );
 };

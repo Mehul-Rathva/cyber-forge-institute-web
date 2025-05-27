@@ -37,10 +37,17 @@ const Careers = () => {
     <div className="min-h-screen bg-white">
       <Navigation />
       
+      {/* Animated Background */}
+      <div className="fixed inset-0 opacity-10 pointer-events-none">
+        <div className="white-matrix-bg"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
+      </div>
+      
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-cyan-600">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">Career Opportunities</h1>
+      <section className="pt-24 pb-12 bg-gradient-to-r from-blue-500 to-purple-600 relative">
+        <div className="absolute inset-0 white-grid opacity-20"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-5xl font-bold text-white mb-6 animate-fade-in">Career Opportunities</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Discover exciting career paths in the rapidly growing field of cybersecurity 
             and digital forensics
@@ -49,16 +56,18 @@ const Careers = () => {
       </section>
 
       {/* Career Paths */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Career Paths</h2>
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4 relative z-10">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Career Paths</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {careerPaths.map((career, index) => (
-              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-blue-200 hover:bg-blue-50">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
-                    <Briefcase className="w-8 h-8 text-blue-600 mr-3" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-3">
+                      <Briefcase className="w-6 h-6 text-white" />
+                    </div>
                     <h3 className="text-xl font-bold text-gray-900">{career.title}</h3>
                   </div>
                   
@@ -82,23 +91,24 @@ const Careers = () => {
       </section>
 
       {/* Job Market Stats */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-12 text-gray-900">Industry Outlook</h2>
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(59,130,246,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Industry Outlook</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-4">3.5M</div>
+            <div className="bg-white p-8 rounded-lg shadow-lg border border-blue-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="text-4xl font-bold text-blue-600 mb-4 animate-fade-in">3.5M</div>
               <div className="text-gray-600">Unfilled cybersecurity jobs globally</div>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="text-4xl font-bold text-green-600 mb-4">22%</div>
+            <div className="bg-white p-8 rounded-lg shadow-lg border border-blue-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="text-4xl font-bold text-purple-600 mb-4 animate-fade-in">22%</div>
               <div className="text-gray-600">Expected job growth through 2030</div>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="text-4xl font-bold text-purple-600 mb-4">$103K</div>
+            <div className="bg-white p-8 rounded-lg shadow-lg border border-blue-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="text-4xl font-bold text-indigo-600 mb-4 animate-fade-in">$103K</div>
               <div className="text-gray-600">Average annual salary</div>
             </div>
           </div>

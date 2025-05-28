@@ -37,51 +37,43 @@ const Index = () => {
 
   const featuredCourses = [
     {
-      title: "Certified Cyber & Digital Forensic Examiner",
+      title: "Certified Cyber & Digital Forensic Examiner (CCDFE)",
       duration: "8 weeks",
       mode: "Online/Offline",
-      description: "Comprehensive certification program covering all aspects of digital forensics",
+      description: "Our flagship 8-week professional program covering everything from forensic fundamentals to advanced evidence analysis",
       highlights: ["Hands-on Labs", "Industry Tools", "Real Case Studies", "Certification Included"],
-      price: "₹49,999"
-    },
-    {
-      title: "Digital Forensics Essentials",
-      duration: "2 weeks",
-      mode: "Modular",
-      description: "Foundation course covering essential digital forensics concepts",
-      highlights: ["Beginner Friendly", "Practical Approach", "Expert Instructors", "Certificate"],
-      price: "₹14,999"
-    },
-    {
-      title: "Mobile Forensics Specialist",
-      duration: "3 weeks",
-      mode: "Online/Offline",
-      description: "Specialized training in mobile device forensics and analysis",
-      highlights: ["Latest Tools", "iOS & Android", "Case Studies", "Hands-on Practice"],
       price: "₹24,999"
+    },
+    {
+      title: "Digital Forensics Essentials - Modular Courses",
+      duration: "2 weeks per module",
+      mode: "Modular",
+      description: "Choose from specialized 2-week modules: Mobile Forensics, Network Forensics, Email & Cloud Forensics, and more",
+      highlights: ["Flexible Learning", "Expert Instructors", "Practical Approach", "Certificate per Module"],
+      price: "₹14,999 per module"
     }
   ];
 
   const securityFeatures = [
     {
       icon: Lock,
-      title: "Advanced Encryption",
-      description: "Learn cutting-edge encryption techniques used by security professionals"
+      title: "Hands-On Training",
+      description: "We emphasize practical exercises with real evidence analysis and simulation of cyberattacks"
     },
     {
       icon: Shield,
-      title: "Threat Detection",
-      description: "Master the art of identifying and neutralizing cyber threats"
+      title: "Expert Faculty",
+      description: "Learn from certified examiners, former investigators, and cybersecurity analysts"
     },
     {
       icon: Eye,
-      title: "Digital Investigation",
-      description: "Uncover digital evidence with precision and forensic accuracy"
+      title: "Cutting-Edge Infrastructure",
+      description: "Digital Forensics Lab, Network Attack Simulation Environment, and mock courtroom"
     },
     {
       icon: Zap,
-      title: "Rapid Response",
-      description: "Develop skills for immediate incident response and mitigation"
+      title: "Global Standards",
+      description: "Prepare for international certifications and rigorous certification paths"
     }
   ];
 
@@ -138,7 +130,7 @@ const Index = () => {
           </h1>
           <div className="relative mb-8">
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Master the art of <span className="text-blue-600 font-semibold">cyber forensics</span> with hands-on training from industry experts
+              Hands-on <span className="text-blue-600 font-semibold">Cyber & Digital Forensic</span> Training from Industry Experts
             </p>
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-100 to-purple-100 blur-lg rounded-lg animate-pulse"></div>
           </div>
@@ -152,7 +144,7 @@ const Index = () => {
             </Link>
             <Button variant="outline" className="border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 text-lg rounded-lg font-semibold transform hover:scale-105 transition-all duration-300">
               <Shield className="mr-2 w-5 h-5" />
-              Watch Demo
+              Download Brochure
             </Button>
           </div>
         </div>
@@ -163,26 +155,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Security Features */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative">
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(59,130,246,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Advanced Security Training
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {securityFeatures.map((feature, index) => (
-              <Card key={index} className="bg-white border-blue-200 shadow-lg backdrop-blur-sm hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse shadow-lg">
-                    <feature.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+      {/* Intro Section */}
+      <section className="py-16 bg-white relative">
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <p className="text-lg text-gray-600 max-w-6xl mx-auto leading-relaxed">
+            Cyber & Digital Forensics Institute of India (CDFII) is a premier training academy empowering the next generation of cyber investigators. 
+            We combine cutting-edge technology with real-world case simulations so you learn by doing, not just by watching. With industry-standard 
+            labs and certified instructors, we turn beginners into highly skilled forensic analysts ready to uncover digital evidence in any scenario.
+          </p>
         </div>
       </section>
 
@@ -206,13 +186,36 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Why Choose CDFII Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(59,130,246,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Why Choose CDFII?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {securityFeatures.map((feature, index) => (
+              <Card key={index} className="bg-white border-blue-200 shadow-lg backdrop-blur-sm hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse shadow-lg">
+                    <feature.icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Featured Courses */}
       <section className="py-20 bg-white relative">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Elite Training Programs
+            Featured Courses
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {featuredCourses.map((course, index) => (
               <CourseCard key={index} course={course} />
             ))}
@@ -230,9 +233,9 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-indigo-50 relative">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1)_0%,transparent_70%)]"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Ready to Start Your Cyber Forensics Journey?</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Ready to start your journey in cyber forensics?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Join thousands of successful graduates and become a certified digital forensics expert
+            Download our brochure or enroll today and join thousands of successful graduates!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-4 text-lg rounded-lg font-semibold shadow-lg shadow-blue-500/25">

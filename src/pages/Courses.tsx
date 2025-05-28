@@ -21,7 +21,7 @@ const Courses = () => {
       "Professional CCDFE certification upon completion",
       "Job placement assistance and career support"
     ],
-    price: "₹24,999",
+    price: "₹49,999",
     whoShouldAttend: [
       "Aspiring Cyber Forensic Investigators and Analysts",
       "IT/Network professionals seeking to specialize",
@@ -81,16 +81,18 @@ const Courses = () => {
       
       {/* Animated Background */}
       <div className="fixed inset-0 opacity-10 pointer-events-none">
-        <div className="white-matrix-bg"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
+        <div className="cyber-matrix-bg"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#E8F4F8] via-white to-[#E0F2E6]"></div>
       </div>
       
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-to-r from-blue-500 to-purple-600 relative">
-        <div className="absolute inset-0 white-grid opacity-20"></div>
+      <section className="pt-24 pb-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] relative">
+        <div className="absolute inset-0 opacity-20">
+          <div className="cyber-matrix-bg"></div>
+        </div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-5xl font-bold text-white mb-6 animate-fade-in">Explore Our Cyber & Digital Forensics Courses</h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-[#E8F4F8] max-w-3xl mx-auto">
             Choose from our comprehensive range of certification programs and modular courses 
             designed to meet every level of expertise in cyber forensics
           </p>
@@ -109,25 +111,25 @@ const Courses = () => {
       </section>
 
       {/* Flagship Program */}
-      <section className="py-20 bg-gray-50 relative">
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(59,130,246,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
+      <section className="py-20 bg-[#F8FFFE] relative">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(10,37,64,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Flagship Program</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] bg-clip-text text-transparent">Flagship Program</h2>
           
           <div className="max-w-6xl mx-auto">
-            <Card className="bg-white shadow-xl border-2 border-blue-200 hover:border-blue-400 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/25">
+            <Card className="bg-white shadow-xl border-2 border-[#0A2540]/20 hover:border-[#00A693] transition-all duration-300 hover:shadow-2xl hover:shadow-[#0A2540]/25">
               <CardContent className="p-8">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                   {/* Main Course Info */}
                   <div className="lg:col-span-2">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center animate-pulse shadow-lg">
+                      <div className="w-16 h-16 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-lg flex items-center justify-center animate-pulse shadow-lg">
                         <Award className="w-8 h-8 text-white" />
                       </div>
-                      <span className="text-3xl font-bold text-blue-600">{flagshipProgram.price}</span>
+                      <span className="text-3xl font-bold text-[#00A693]">{flagshipProgram.price}</span>
                     </div>
                     
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">{flagshipProgram.title}</h3>
+                    <h3 className="text-2xl font-bold text-[#0A2540] mb-4">{flagshipProgram.title}</h3>
                     <p className="text-gray-600 mb-6">{flagshipProgram.description}</p>
                     
                     <div className="grid grid-cols-2 gap-4 mb-6">
@@ -151,12 +153,12 @@ const Courses = () => {
                     
                     <div className="space-y-3 mb-6">
                       <Link to="/courses/detail">
-                        <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white transform hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/25">
+                        <Button className="w-full bg-gradient-to-r from-[#0A2540] to-[#00A693] hover:from-[#0A2540]/90 hover:to-[#00A693]/90 text-white transform hover:scale-105 transition-all duration-300 shadow-lg shadow-[#0A2540]/25">
                           Learn More
                         </Button>
                       </Link>
                       <Link to="/enrollment">
-                        <Button className="w-full bg-white text-blue-600 border-2 border-blue-600 hover:bg-blue-50 transform hover:scale-105 transition-all duration-300">
+                        <Button className="w-full bg-white text-[#00A693] border-2 border-[#00A693] hover:bg-[#E0F2E6] transform hover:scale-105 transition-all duration-300">
                           Enroll Now
                         </Button>
                       </Link>
@@ -165,21 +167,21 @@ const Courses = () => {
                   
                   {/* Course Highlights */}
                   <div>
-                    <h4 className="text-lg font-bold text-gray-900 mb-4">Key Highlights</h4>
+                    <h4 className="text-lg font-bold text-[#0A2540] mb-4">Key Highlights</h4>
                     <ul className="space-y-3 mb-6">
                       {flagshipProgram.highlights.map((highlight, index) => (
                         <li key={index} className="flex items-start">
-                          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
+                          <CheckCircle className="w-5 h-5 text-[#00C851] mr-3 flex-shrink-0 mt-0.5" />
                           <span className="text-sm text-gray-600">{highlight}</span>
                         </li>
                       ))}
                     </ul>
                     
-                    <h4 className="text-lg font-bold text-gray-900 mb-4">Who Should Attend</h4>
+                    <h4 className="text-lg font-bold text-[#0A2540] mb-4">Who Should Attend</h4>
                     <ul className="space-y-2">
                       {flagshipProgram.whoShouldAttend.map((person, index) => (
                         <li key={index} className="flex items-start">
-                          <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></div>
+                          <div className="w-2 h-2 bg-[#00A693] rounded-full mr-3 mt-2"></div>
                           <span className="text-sm text-gray-600">{person}</span>
                         </li>
                       ))}
@@ -195,20 +197,20 @@ const Courses = () => {
       {/* Modular Courses */}
       <section className="py-20 relative">
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Digital Forensics Essentials</h2>
+          <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-[#0A2540] to-[#00A693] bg-clip-text text-transparent">Digital Forensics Essentials</h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Modular 2-week courses that can be taken independently or combined. Each module focuses on a specific area of digital forensics.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {modularCourses.map((course, index) => (
-              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 group border border-blue-200 hover:bg-blue-50 hover:scale-105">
+              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 group border-2 border-[#0A2540]/20 hover:bg-[#E0F2E6] hover:scale-105 hover:border-[#00A693]">
                 <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 animate-pulse shadow-lg">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 animate-pulse shadow-lg">
                     <BookOpen className="w-6 h-6 text-white" />
                   </div>
                   
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{course.title}</h3>
+                  <h3 className="text-xl font-bold text-[#0A2540] mb-3">{course.title}</h3>
                   <p className="text-gray-600 mb-4">{course.description}</p>
                   
                   <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
@@ -216,17 +218,17 @@ const Courses = () => {
                       <Clock className="w-4 h-4 mr-2" />
                       {course.duration}
                     </div>
-                    <span className="text-lg font-bold text-blue-600">{course.price}</span>
+                    <span className="text-lg font-bold text-[#00A693]">{course.price}</span>
                   </div>
                   
                   <div className="space-y-3">
                     <Link to="/courses/detail">
-                      <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white transform hover:scale-105 transition-all duration-300">
+                      <Button className="w-full bg-gradient-to-r from-[#0A2540] to-[#00A693] hover:from-[#0A2540]/90 hover:to-[#00A693]/90 text-white transform hover:scale-105 transition-all duration-300">
                         Learn More
                       </Button>
                     </Link>
                     <Link to="/enrollment">
-                      <Button className="w-full bg-white text-blue-600 border border-blue-600 hover:bg-blue-50 transform hover:scale-105 transition-all duration-300">
+                      <Button className="w-full bg-white text-[#00A693] border border-[#00A693] hover:bg-[#E0F2E6] transform hover:scale-105 transition-all duration-300">
                         Enroll
                       </Button>
                     </Link>
@@ -239,11 +241,11 @@ const Courses = () => {
       </section>
 
       {/* Features Sidebar */}
-      <section className="py-20 bg-gray-50 relative">
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(59,130,246,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
+      <section className="py-20 bg-[#F8FFFE] relative">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(10,37,64,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <Card className="bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-xl">
+            <Card className="bg-gradient-to-r from-[#0A2540] to-[#00A693] text-white shadow-xl">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-6 text-center">Why Choose Our Courses?</h3>
                 
@@ -251,19 +253,19 @@ const Courses = () => {
                   <div className="text-center">
                     <Globe className="w-12 h-12 mx-auto mb-4" />
                     <h4 className="text-lg font-bold mb-2">Flexible Learning</h4>
-                    <p className="text-blue-100">Online and offline options to suit your schedule with live instructor-led sessions</p>
+                    <p className="text-[#E8F4F8]">Online and offline options to suit your schedule with live instructor-led sessions</p>
                   </div>
                   
                   <div className="text-center">
                     <Award className="w-12 h-12 mx-auto mb-4" />
                     <h4 className="text-lg font-bold mb-2">Professional Certification</h4>
-                    <p className="text-blue-100">Industry-recognized certificates and preparation for international certifications</p>
+                    <p className="text-[#E8F4F8]">Industry-recognized certificates and preparation for international certifications</p>
                   </div>
                   
                   <div className="text-center">
                     <Users className="w-12 h-12 mx-auto mb-4" />
                     <h4 className="text-lg font-bold mb-2">Expert Instructors</h4>
-                    <p className="text-blue-100">Learn from certified examiners, former investigators, and cybersecurity professionals</p>
+                    <p className="text-[#E8F4F8]">Learn from certified examiners, former investigators, and cybersecurity professionals</p>
                   </div>
                 </div>
               </CardContent>

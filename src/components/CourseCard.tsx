@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Clock, Users, Award, Monitor } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface Course {
   title: string;
@@ -20,12 +20,18 @@ interface CourseCardProps {
 
 const CourseCard = ({ course }: CourseCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate('/courses');
+  };
 
   return (
     <div 
-      className="relative h-96 perspective-1000"
+      className="relative h-96 perspective-1000 cursor-pointer"
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
+      onClick={handleCardClick}
     >
       <div className={`absolute inset-0 transition-transform duration-700 transform-style-preserve-3d ${
         isFlipped ? 'rotate-y-180' : ''
@@ -67,12 +73,12 @@ const CourseCard = ({ course }: CourseCardProps) => {
               ))}
             </ul>
             <div className="space-y-3 mt-4">
-              <Link to="/courses/detail">
+              <Link to="/courses/detail" onClick={(e) => e.stopPropagation()}>
                 <Button className="w-full bg-white text-[#0A2540] hover:bg-gray-100">
                   Learn More
                 </Button>
               </Link>
-              <Link to="/enrollment">
+              <Link to="/enrollment" onClick={(e) => e.stopPropagation()}>
                 <Button className="w-full bg-[#00C851] hover:bg-[#00C851]/90 text-white">
                   Enroll Now
                 </Button>

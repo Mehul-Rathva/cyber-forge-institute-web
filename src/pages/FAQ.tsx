@@ -44,20 +44,22 @@ const FAQ = () => {
       
       {/* Animated Background */}
       <div className="fixed inset-0 opacity-10 pointer-events-none">
-        <div className="white-matrix-bg"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
+        <div className="cyber-matrix-bg"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#E8F4F8] via-white to-[#E0F2E6]"></div>
       </div>
       
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-to-r from-blue-50 via-purple-50 to-indigo-50 relative">
-        <div className="absolute inset-0 white-grid opacity-20"></div>
+      <section className="pt-24 pb-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] relative">
+        <div className="absolute inset-0 opacity-20">
+          <div className="cyber-matrix-bg"></div>
+        </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl font-bold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text mb-6 animate-text-glow">
+          <h1 className="text-5xl font-bold text-white mb-6 animate-text-glow">
             Frequently Asked Questions
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-[#E8F4F8] max-w-3xl mx-auto">
             Find answers to common questions about our courses, certification programs, 
-            and career opportunities in <span className="text-blue-600">cybersecurity</span>
+            and career opportunities in <span className="text-[#00C851]">cybersecurity</span>
           </p>
         </div>
       </section>
@@ -66,10 +68,10 @@ const FAQ = () => {
       <section className="py-20 relative">
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <div className="flex items-center justify-center mb-12">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-4 animate-pulse shadow-lg">
+            <div className="w-16 h-16 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-full flex items-center justify-center mr-4 animate-pulse shadow-lg">
               <Shield className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-4xl font-bold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#0A2540] to-[#00A693] bg-clip-text text-transparent">
               Common Questions
             </h2>
           </div>
@@ -79,10 +81,10 @@ const FAQ = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`} 
-                className="border border-blue-200 bg-white shadow-lg backdrop-blur-sm rounded-lg px-6 hover:bg-blue-50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/25"
+                className="border-2 border-[#0A2540]/20 bg-white shadow-lg backdrop-blur-sm rounded-lg px-6 hover:bg-[#E8F4F8] transition-all duration-300 hover:shadow-xl hover:shadow-[#0A2540]/25"
               >
-                <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-blue-600 flex items-center gap-3">
-                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                <AccordionTrigger className="text-left font-semibold text-[#0A2540] hover:text-[#00A693] flex items-center gap-3">
+                  <div className="w-8 h-8 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-full flex items-center justify-center">
                     <faq.icon className="w-4 h-4 text-white" />
                   </div>
                   {faq.question}
@@ -97,40 +99,40 @@ const FAQ = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative">
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(59,130,246,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
+      <section className="py-20 bg-[#F8FFFE] relative">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(10,37,64,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl font-bold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text mb-6">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-[#0A2540] to-[#00A693] bg-clip-text text-transparent mb-6">
             Still Have Questions?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Can't find the answer you're looking for? Our <span className="text-blue-600">elite</span> admissions team is here to help.
+            Can't find the answer you're looking for? Our <span className="text-[#00A693]">expert</span> admissions team is here to help.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <div className="bg-white border border-blue-200 rounded-lg p-6 shadow-lg backdrop-blur-sm hover:bg-blue-50 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white border-2 border-[#0A2540]/20 rounded-lg p-6 shadow-lg backdrop-blur-sm hover:bg-[#E8F4F8] transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Lock className="w-6 h-6 text-white" />
               </div>
               <p className="text-gray-600">
-                <strong className="text-blue-600">Email:</strong><br />
-                admissions@cyberforensics.edu
+                <strong className="text-[#0A2540]">Email:</strong><br />
+                info@cdfii.in
               </p>
             </div>
-            <div className="bg-white border border-blue-200 rounded-lg p-6 shadow-lg backdrop-blur-sm hover:bg-blue-50 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white border-2 border-[#0A2540]/20 rounded-lg p-6 shadow-lg backdrop-blur-sm hover:bg-[#E8F4F8] transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <p className="text-gray-600">
-                <strong className="text-blue-600">Phone:</strong><br />
-                (555) 123-4567
+                <strong className="text-[#0A2540]">Phone:</strong><br />
+                +91-9876543210
               </p>
             </div>
-            <div className="bg-white border border-blue-200 rounded-lg p-6 shadow-lg backdrop-blur-sm hover:bg-blue-50 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white border-2 border-[#0A2540]/20 rounded-lg p-6 shadow-lg backdrop-blur-sm hover:bg-[#E8F4F8] transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Eye className="w-6 h-6 text-white" />
               </div>
               <p className="text-gray-600">
-                <strong className="text-blue-600">Hours:</strong><br />
+                <strong className="text-[#0A2540]">Hours:</strong><br />
                 Monday - Friday, 9:00 AM - 6:00 PM
               </p>
             </div>

@@ -31,15 +31,15 @@ const CourseCard = ({ course }: CourseCardProps) => {
         isFlipped ? 'rotate-y-180' : ''
       }`}>
         {/* Front */}
-        <Card className="absolute inset-0 backface-hidden bg-white border-2 border-gray-200 hover:border-blue-300 transition-colors duration-300">
+        <Card className="absolute inset-0 backface-hidden bg-white border-2 border-[#1F4E79]/20 hover:border-[#00C2A8] transition-colors duration-300">
           <div className="p-6 h-full flex flex-col">
             <div className="flex items-center justify-between mb-4">
-              <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#1F4E79] to-[#00C2A8] rounded-lg flex items-center justify-center">
                 <Award className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold text-blue-600">{course.price}</span>
+              <span className="text-2xl font-bold text-[#1F4E79]">{course.price}</span>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">{course.title}</h3>
+            <h3 className="text-xl font-bold text-[#1F4E79] mb-3 line-clamp-2">{course.title}</h3>
             <p className="text-gray-600 mb-4 flex-grow">{course.description}</p>
             <div className="space-y-2">
               <div className="flex items-center text-sm text-gray-500">
@@ -55,25 +55,25 @@ const CourseCard = ({ course }: CourseCardProps) => {
         </Card>
 
         {/* Back */}
-        <Card className="absolute inset-0 backface-hidden rotate-y-180 bg-gradient-to-br from-blue-600 to-cyan-600 text-white">
+        <Card className="absolute inset-0 backface-hidden rotate-y-180 bg-gradient-to-br from-[#1F4E79] to-[#00C2A8] text-white">
           <div className="p-6 h-full flex flex-col">
             <h3 className="text-lg font-bold mb-4">Key Highlights</h3>
             <ul className="space-y-2 flex-grow">
               {course.highlights.map((highlight, index) => (
                 <li key={index} className="flex items-center">
-                  <div className="w-2 h-2 bg-cyan-300 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
                   {highlight}
                 </li>
               ))}
             </ul>
             <div className="space-y-3 mt-4">
               <Link to="/courses/detail">
-                <Button className="w-full bg-white text-blue-600 hover:bg-gray-100">
+                <Button className="w-full bg-white text-[#1F4E79] hover:bg-gray-100">
                   Learn More
                 </Button>
               </Link>
               <Link to="/enrollment">
-                <Button className="w-full bg-cyan-500 hover:bg-cyan-600 text-white">
+                <Button className="w-full bg-[#00C2A8] hover:bg-[#00C2A8]/90 text-white">
                   Enroll Now
                 </Button>
               </Link>

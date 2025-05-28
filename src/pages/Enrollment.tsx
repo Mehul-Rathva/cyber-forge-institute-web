@@ -21,7 +21,7 @@ const Enrollment = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-cyan-600">
+      <section className="pt-24 pb-12 bg-gradient-to-r from-[#0A2540] to-[#00A693]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-white mb-6">Enroll Now</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
@@ -32,15 +32,15 @@ const Enrollment = () => {
       </section>
 
       {/* Enrollment Process */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-[#F8FFFE]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Enrollment Process</h2>
+          <h2 className="text-3xl font-bold text-center mb-8 text-[#0A2540]">Enrollment Process</h2>
           
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
             {enrollmentSteps.map((step, index) => (
               <div key={index} className="flex items-center">
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold">
+                  <div className="w-8 h-8 bg-[#00A693] text-white rounded-full flex items-center justify-center font-semibold">
                     {index + 1}
                   </div>
                   <span className="ml-3 text-gray-700 font-medium">{step}</span>
@@ -60,14 +60,14 @@ const Enrollment = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Form */}
             <div className="lg:col-span-2">
-              <Card className="shadow-lg">
+              <Card className="shadow-lg border border-[#0A2540]/10">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Enrollment Application</h2>
+                  <h2 className="text-2xl font-bold text-[#0A2540] mb-6">Enrollment Application</h2>
                   
                   <form className="space-y-6">
                     {/* Personal Information */}
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                      <h3 className="text-lg font-semibold text-[#0A2540] mb-4 flex items-center">
                         <User className="w-5 h-5 mr-2" />
                         Personal Information
                       </h3>
@@ -97,7 +97,7 @@ const Enrollment = () => {
 
                     {/* Program Selection */}
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                      <h3 className="text-lg font-semibold text-[#0A2540] mb-4 flex items-center">
                         <CheckCircle className="w-5 h-5 mr-2" />
                         Program Selection
                       </h3>
@@ -110,10 +110,10 @@ const Enrollment = () => {
                               <SelectValue placeholder="Select a program" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="ccdfe">Certified Cyber & Digital Forensic Examiner (CCDFE)</SelectItem>
-                              <SelectItem value="essentials">Digital Forensics Essentials</SelectItem>
-                              <SelectItem value="mobile">Mobile Forensics</SelectItem>
-                              <SelectItem value="network">Network Forensics</SelectItem>
+                              <SelectItem value="ccdfe">Certified Cyber & Digital Forensic Examiner (CCDFE) - ₹49,999</SelectItem>
+                              <SelectItem value="mobile">Mobile Forensics Module - ₹14,999</SelectItem>
+                              <SelectItem value="network">Network Forensics Module - ₹14,999</SelectItem>
+                              <SelectItem value="email">Email & Cloud Forensics Module - ₹14,999</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
@@ -136,7 +136,7 @@ const Enrollment = () => {
 
                     {/* Payment Information */}
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                      <h3 className="text-lg font-semibold text-[#0A2540] mb-4 flex items-center">
                         <CreditCard className="w-5 h-5 mr-2" />
                         Payment Plan
                       </h3>
@@ -174,7 +174,7 @@ const Enrollment = () => {
                       </label>
                     </div>
 
-                    <Button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white">
+                    <Button className="w-full bg-gradient-to-r from-[#0A2540] to-[#00A693] hover:from-[#0A2540]/90 hover:to-[#00A693]/90 text-white">
                       Complete Enrollment
                     </Button>
                   </form>
@@ -184,9 +184,9 @@ const Enrollment = () => {
 
             {/* Summary Sidebar */}
             <div>
-              <Card className="shadow-lg sticky top-8">
+              <Card className="shadow-lg sticky top-8 border border-[#0A2540]/10">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-4">Enrollment Summary</h3>
+                  <h3 className="text-lg font-bold text-[#0A2540] mb-4">Enrollment Summary</h3>
                   
                   <div className="space-y-4">
                     <div className="flex justify-between">
@@ -208,19 +208,19 @@ const Enrollment = () => {
                     
                     <div className="flex justify-between text-lg font-bold">
                       <span>Total:</span>
-                      <span className="text-blue-600">₹49,999</span>
+                      <span className="text-[#00A693]">₹49,999</span>
                     </div>
                     
                     <div className="mt-6 space-y-3">
-                      <div className="flex items-center text-sm text-green-600">
+                      <div className="flex items-center text-sm text-[#00C851]">
                         <CheckCircle className="w-4 h-4 mr-2" />
                         Certification included
                       </div>
-                      <div className="flex items-center text-sm text-green-600">
+                      <div className="flex items-center text-sm text-[#00C851]">
                         <CheckCircle className="w-4 h-4 mr-2" />
                         Job placement assistance
                       </div>
-                      <div className="flex items-center text-sm text-green-600">
+                      <div className="flex items-center text-sm text-[#00C851]">
                         <CheckCircle className="w-4 h-4 mr-2" />
                         Lifetime access to materials
                       </div>

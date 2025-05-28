@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ChevronDown, Users, BookOpen, Trophy, TrendingUp, Lock, Shield, Eye, Zap, MessageCircle, ArrowUp } from 'lucide-react';
+import { ChevronDown, Users, BookOpen, Trophy, TrendingUp, Lock, Shield, Eye, Zap, ArrowUp, Smartphone, Laptop, Book } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -55,15 +55,15 @@ const Index = () => {
       mode: "Online/Offline",
       description: "Our flagship 8-week professional program covering everything from forensic fundamentals to advanced evidence analysis",
       highlights: ["Hands-on Labs", "Industry Tools", "Real Case Studies", "Certification Included"],
-      price: "₹24,999"
+      price: "₹49,999"
     },
     {
-      title: "Digital Forensics Essentials - Modular Courses",
-      duration: "2 weeks per module",
+      title: "Digital Forensics Essentials - Mobile Forensics",
+      duration: "2 weeks",
       mode: "Modular",
-      description: "Choose from specialized 2-week modules: Mobile Forensics, Network Forensics, Email & Cloud Forensics, and more",
-      highlights: ["Flexible Learning", "Expert Instructors", "Practical Approach", "Certificate per Module"],
-      price: "₹14,999 per module"
+      description: "Specialized module focusing on mobile device forensics, data extraction, and analysis techniques",
+      highlights: ["Mobile Tools", "Expert Instructors", "Practical Labs", "Certificate Included"],
+      price: "₹14,999"
     }
   ];
 
@@ -94,39 +94,60 @@ const Index = () => {
     <div className="min-h-screen bg-white text-gray-900 overflow-hidden">
       <Navigation />
       
-      {/* Animated Grid Background */}
+      {/* Enhanced Animated Background */}
       <div className="fixed inset-0 opacity-10 pointer-events-none">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #1F4E79 0%, transparent 2px)`,
+          backgroundImage: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #0A2540 0%, transparent 2px)`,
           backgroundSize: '50px 50px'
         }}></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-[#E0F7FA]"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#E8F4F8] via-white to-[#E0F2E6]"></div>
       </div>
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Animated Elements */}
+        {/* Enhanced Animated Elements */}
         <div className="absolute inset-0">
           <div className="cyber-matrix-bg opacity-20"></div>
-          {/* Floating Code Blocks */}
-          <div className="absolute top-20 left-10 text-[#1F4E79] font-mono text-xs opacity-60 animate-pulse">
-            01001000 01100001 01100011 01101011
+          
+          {/* Binary Code Animation */}
+          <div className="absolute top-10 left-10 text-[#0A2540] font-mono text-xs opacity-60 animate-pulse">
+            01001000 01100001 01100011 01101011<br/>
+            01000011 01111001 01100010 01100101<br/>
+            01110010 00100000 01000110 01101111
           </div>
-          <div className="absolute top-40 right-20 text-[#00C2A8] font-mono text-xs opacity-60 animate-pulse delay-1000">
-            {"<script>alert('SECURED')</script>"}
+          <div className="absolute top-20 right-20 text-[#00A693] font-mono text-xs opacity-60 animate-pulse delay-1000">
+            {"<forensics>digital</forensics>"}<br/>
+            {"<security>cyber</security>"}<br/>
+            {"<investigation>evidence</investigation>"}
           </div>
-          <div className="absolute bottom-32 left-20 text-[#1F4E79] font-mono text-xs opacity-60 animate-pulse delay-2000">
-            rm -rf /threats/*
+          <div className="absolute bottom-32 left-20 text-[#0A2540] font-mono text-xs opacity-60 animate-pulse delay-2000">
+            rm -rf /threats/*<br/>
+            chmod 755 /security<br/>
+            sudo investigate --deep
+          </div>
+          
+          {/* Floating Tech Icons */}
+          <div className="absolute top-1/4 left-1/4 animate-float">
+            <Smartphone className="w-8 h-8 text-[#00C851] opacity-70" />
+          </div>
+          <div className="absolute top-1/3 right-1/3 animate-float delay-1000">
+            <Laptop className="w-10 h-10 text-[#0A2540] opacity-70" />
+          </div>
+          <div className="absolute bottom-1/3 left-1/3 animate-float delay-2000">
+            <Book className="w-8 h-8 text-[#00A693] opacity-70" />
+          </div>
+          <div className="absolute top-1/2 right-1/4 animate-float delay-500">
+            <Shield className="w-9 h-9 text-[#00C851] opacity-70" />
           </div>
         </div>
         
         {/* Animated Logo */}
         <div className="absolute top-20 left-1/2 transform -translate-x-1/2 z-10">
           <div className="relative">
-            <div className="w-24 h-24 bg-gradient-to-r from-[#1F4E79] to-[#00C2A8] rounded-lg flex items-center justify-center text-white font-bold text-xl animate-float shadow-lg">
+            <div className="w-24 h-24 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-lg flex items-center justify-center text-white font-bold text-xl animate-float shadow-lg">
               CDFII
             </div>
-            <div className="absolute inset-0 w-24 h-24 bg-gradient-to-r from-blue-300 to-teal-300 rounded-lg flex items-center justify-center text-white font-bold text-xl opacity-0 animate-ping">
+            <div className="absolute inset-0 w-24 h-24 bg-gradient-to-r from-[#00A693] to-[#00C851] rounded-lg flex items-center justify-center text-white font-bold text-xl opacity-0 animate-ping">
               CDFII
             </div>
           </div>
@@ -136,26 +157,26 @@ const Index = () => {
         <div className={`relative z-10 text-center px-4 transition-all duration-1000 transform ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-          <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#1F4E79] via-[#00C2A8] to-[#1F4E79] bg-clip-text text-transparent animate-fade-in">
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#0A2540] via-[#00A693] to-[#00C851] bg-clip-text text-transparent animate-fade-in">
             UNLOCK THE TRUTH
             <br />
             <span className="text-3xl md:text-5xl">OF THE DIGITAL WORLD</span>
           </h1>
           <div className="relative mb-8">
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Hands-on <span className="text-[#1F4E79] font-semibold">Cyber & Digital Forensic</span> Training from Industry Experts
+              Hands-on <span className="text-[#0A2540] font-semibold">Cyber & Digital Forensic</span> Training from Industry Experts
             </p>
-            <div className="absolute -inset-4 bg-gradient-to-r from-blue-100 to-[#E0F7FA] blur-lg rounded-lg animate-pulse"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-[#E8F4F8] to-[#E0F2E6] blur-lg rounded-lg animate-pulse"></div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/courses">
-              <Button className="relative bg-gradient-to-r from-[#1F4E79] to-[#00C2A8] hover:from-[#1F4E79]/90 hover:to-[#00C2A8]/90 text-white px-8 py-4 text-lg rounded-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg shadow-[#1F4E79]/25">
+              <Button className="relative bg-gradient-to-r from-[#0A2540] to-[#00A693] hover:from-[#0A2540]/90 hover:to-[#00A693]/90 text-white px-8 py-4 text-lg rounded-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg shadow-[#0A2540]/25">
                 <Lock className="mr-2 w-5 h-5" />
                 Browse Courses
-                <div className="absolute inset-0 bg-gradient-to-r from-[#1F4E79]/40 to-[#00C2A8]/40 rounded-lg blur opacity-30 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0A2540]/40 to-[#00A693]/40 rounded-lg blur opacity-30 animate-pulse"></div>
               </Button>
             </Link>
-            <Button variant="outline" className="border-[#00C2A8] text-[#00C2A8] hover:bg-[#00C2A8] hover:text-white px-8 py-4 text-lg rounded-lg font-semibold transform hover:scale-105 transition-all duration-300">
+            <Button variant="outline" className="border-[#00A693] text-[#00A693] hover:bg-[#00A693] hover:text-white px-8 py-4 text-lg rounded-lg font-semibold transform hover:scale-105 transition-all duration-300">
               <Shield className="mr-2 w-5 h-5" />
               Download Brochure
             </Button>
@@ -164,7 +185,7 @@ const Index = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="text-[#1F4E79] w-8 h-8" />
+          <ChevronDown className="text-[#0A2540] w-8 h-8" />
         </div>
       </section>
 
@@ -180,7 +201,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-[#F0F8FF] relative">
+      <section className="py-20 bg-[#F8FFFE] relative">
         <div className="absolute inset-0 opacity-10">
           <div className="cyber-matrix-bg"></div>
         </div>
@@ -200,20 +221,20 @@ const Index = () => {
       </section>
 
       {/* Why Choose CDFII Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-[#F0F8FF] relative">
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(31,78,121,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
+      <section className="py-20 bg-gradient-to-b from-white to-[#F8FFFE] relative">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(10,37,64,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#1F4E79] to-[#00C2A8] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] bg-clip-text text-transparent">
             Why Choose CDFII?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {securityFeatures.map((feature, index) => (
-              <Card key={index} className="bg-white border-[#1F4E79]/20 shadow-lg backdrop-blur-sm hover:bg-[#E0F7FA] transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#1F4E79]/25">
+              <Card key={index} className="bg-white border-[#0A2540]/20 shadow-lg backdrop-blur-sm hover:bg-[#E0F2E6] transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#0A2540]/25">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-[#1F4E79] to-[#00C2A8] rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse shadow-lg">
+                  <div className="w-16 h-16 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse shadow-lg">
                     <feature.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#1F4E79] mb-2">{feature.title}</h3>
+                  <h3 className="text-xl font-bold text-[#0A2540] mb-2">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
                 </CardContent>
               </Card>
@@ -225,7 +246,7 @@ const Index = () => {
       {/* Featured Courses */}
       <section className="py-20 bg-white relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#1F4E79] to-[#00C2A8] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] bg-clip-text text-transparent">
             Featured Courses
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -242,20 +263,46 @@ const Index = () => {
       {/* Testimonials */}
       <TestimonialSlider />
 
-      {/* CTA Banner */}
-      <section className="py-20 bg-gradient-to-r from-[#F0F8FF] via-[#E0F7FA] to-[#F0F8FF] relative">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(31,78,121,0.1)_0%,transparent_70%)]"></div>
+      {/* Enhanced CTA Banner with Course Information */}
+      <section className="py-20 bg-gradient-to-r from-[#F8FFFE] via-[#E0F2E6] to-[#F8FFFE] relative">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(10,37,64,0.1)_0%,transparent_70%)]"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl font-bold text-[#1F4E79] mb-6">Ready to start your journey in cyber forensics?</h2>
+          <h2 className="text-4xl font-bold text-[#0A2540] mb-6">Ready to start your journey in cyber forensics?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Download our brochure or enroll today and join thousands of successful graduates!
+            Choose from our comprehensive programs and join thousands of successful graduates!
           </p>
+          
+          {/* Course Options */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+            <Card className="bg-white border-[#0A2540]/20 shadow-lg">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-bold text-[#0A2540] mb-2">CCDFE Program</h3>
+                <p className="text-sm text-gray-600 mb-3">8-week comprehensive program</p>
+                <p className="text-2xl font-bold text-[#00A693]">₹49,999</p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white border-[#0A2540]/20 shadow-lg">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-bold text-[#0A2540] mb-2">Mobile Forensics</h3>
+                <p className="text-sm text-gray-600 mb-3">2-week specialized module</p>
+                <p className="text-2xl font-bold text-[#00A693]">₹14,999</p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white border-[#0A2540]/20 shadow-lg">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-bold text-[#0A2540] mb-2">Network Forensics</h3>
+                <p className="text-sm text-gray-600 mb-3">2-week specialized module</p>
+                <p className="text-2xl font-bold text-[#00A693]">₹14,999</p>
+              </CardContent>
+            </Card>
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-gradient-to-r from-[#1F4E79] to-[#00C2A8] hover:from-[#1F4E79]/90 hover:to-[#00C2A8]/90 text-white px-8 py-4 text-lg rounded-lg font-semibold shadow-lg shadow-[#1F4E79]/25">
+            <Button className="bg-gradient-to-r from-[#0A2540] to-[#00A693] hover:from-[#0A2540]/90 hover:to-[#00A693]/90 text-white px-8 py-4 text-lg rounded-lg font-semibold shadow-lg shadow-[#0A2540]/25">
               Download Brochure
             </Button>
             <Link to="/enrollment">
-              <Button className="bg-gradient-to-r from-[#00C2A8] to-[#1F4E79] hover:from-[#00C2A8]/90 hover:to-[#1F4E79]/90 text-white px-8 py-4 text-lg rounded-lg font-semibold shadow-lg shadow-[#00C2A8]/25">
+              <Button className="bg-gradient-to-r from-[#00A693] to-[#00C851] hover:from-[#00A693]/90 hover:to-[#00C851]/90 text-white px-8 py-4 text-lg rounded-lg font-semibold shadow-lg shadow-[#00A693]/25">
                 Enroll Now
               </Button>
             </Link>
@@ -263,19 +310,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Floating Chatbot Button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <Button className="w-16 h-16 rounded-full bg-gradient-to-r from-[#1F4E79] to-[#00C2A8] hover:scale-110 transition-all duration-300 shadow-lg animate-pulse">
-          <MessageCircle className="w-8 h-8 text-white" />
-        </Button>
-      </div>
-
       {/* Back to Top Button */}
       {showBackToTop && (
-        <div className="fixed bottom-6 left-6 z-50">
+        <div className="fixed bottom-6 right-6 z-50">
           <Button
             onClick={scrollToTop}
-            className="w-12 h-12 rounded-full bg-gradient-to-r from-[#00C2A8] to-[#1F4E79] hover:scale-110 transition-all duration-300 shadow-lg"
+            className="w-12 h-12 rounded-full bg-gradient-to-r from-[#00A693] to-[#0A2540] hover:scale-110 transition-all duration-300 shadow-lg"
           >
             <ArrowUp className="w-6 h-6 text-white" />
           </Button>

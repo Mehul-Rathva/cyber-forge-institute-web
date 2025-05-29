@@ -24,10 +24,12 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-full flex items-center justify-center text-white font-bold">
-              CDFII
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/f6868bf5-da0e-4baf-818a-7a233b4df2e6.png" 
+              alt="CDFII Logo" 
+              className="h-10 w-auto"
+            />
             <span className="text-xl font-bold text-[#0A2540]">CDFII</span>
           </Link>
 

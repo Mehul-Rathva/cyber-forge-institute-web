@@ -9,10 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-full flex items-center justify-center text-white font-bold">
-                CDFII
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/lovable-uploads/f6868bf5-da0e-4baf-818a-7a233b4df2e6.png" 
+                alt="CDFII Logo" 
+                className="h-10 w-auto"
+              />
               <span className="text-xl font-bold text-[#0A2540]">
                 Cyber & Digital Forensics Institute of India
               </span>

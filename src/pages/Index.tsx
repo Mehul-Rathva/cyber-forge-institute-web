@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -39,6 +38,16 @@ const Index = () => {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const downloadBrochure = () => {
+    // Create a link element to trigger download
+    const link = document.createElement('a');
+    link.href = '/CDFII Course Package.pdf';
+    link.download = 'CDFII Course Package.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const stats = [
@@ -176,7 +185,11 @@ const Index = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#0A2540]/40 to-[#00A693]/40 rounded-lg blur opacity-30 animate-pulse"></div>
               </Button>
             </Link>
-            <Button variant="outline" className="border-[#00A693] text-[#00A693] hover:bg-[#00A693] hover:text-white px-8 py-4 text-lg rounded-lg font-semibold transform hover:scale-105 transition-all duration-300">
+            <Button 
+              variant="outline" 
+              className="border-[#00A693] text-[#00A693] hover:bg-[#00A693] hover:text-white px-8 py-4 text-lg rounded-lg font-semibold transform hover:scale-105 transition-all duration-300"
+              onClick={downloadBrochure}
+            >
               <Shield className="mr-2 w-5 h-5" />
               Download Brochure
             </Button>
@@ -298,7 +311,10 @@ const Index = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-gradient-to-r from-[#0A2540] to-[#00A693] hover:from-[#0A2540]/90 hover:to-[#00A693]/90 text-white px-8 py-4 text-lg rounded-lg font-semibold shadow-lg shadow-[#0A2540]/25">
+            <Button 
+              className="bg-gradient-to-r from-[#0A2540] to-[#00A693] hover:from-[#0A2540]/90 hover:to-[#00A693]/90 text-white px-8 py-4 text-lg rounded-lg font-semibold shadow-lg shadow-[#0A2540]/25"
+              onClick={downloadBrochure}
+            >
               Download Brochure
             </Button>
             <Link to="/enrollment">

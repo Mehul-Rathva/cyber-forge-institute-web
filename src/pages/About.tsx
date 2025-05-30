@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Eye, Users, BookOpen, Microscope, Scale, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const About = () => {
   const visionMission = [
@@ -67,8 +68,17 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="w-32 h-32 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-6 animate-pulse shadow-lg">
-                  <Users className="w-16 h-16 text-white" />
+                <div className="w-64 h-64 mx-auto lg:mx-0 mb-6 shadow-lg">
+                  <Avatar className="w-full h-full rounded-lg border-4 border-gradient-to-r from-[#0A2540] to-[#00A693]">
+                    <AvatarImage 
+                      src="/lovable-uploads/a71336b3-4fab-46c9-a4b7-bce9ce882ae8.png" 
+                      alt="Viral Shah - CEO, CDFII"
+                      className="object-cover w-full h-full rounded-lg"
+                    />
+                    <AvatarFallback className="bg-gradient-to-r from-[#0A2540] to-[#00A693] text-white text-4xl rounded-lg">
+                      VS
+                    </AvatarFallback>
+                  </Avatar>
                 </div>
               </div>
               <div>
@@ -78,7 +88,7 @@ const About = () => {
                   we aim to create a community of cyber defenders who can meet any challenge."
                 </blockquote>
                 <cite className="text-lg font-semibold text-[#0A2540]">
-                  - CEO, CDFII
+                  - Viral Shah, CEO, CDFII
                 </cite>
               </div>
             </div>

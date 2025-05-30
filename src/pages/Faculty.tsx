@@ -23,6 +23,14 @@ const Faculty = () => {
 
   const teamMembers = [
     {
+      name: "Viral Shah",
+      title: "CEO of CDFII",
+      image: "/lovable-uploads/a71336b3-4fab-46c9-a4b7-bce9ce882ae8.png",
+      quote: "Leadership is not about being in charge. It's about taking care of those in your charge.",
+      description: "Visionary founder and leader of CDFII. With a passion for digital integrity, Viral Shah champions hands-on, ethical training in cyber forensics to build a safer digital future.",
+      icon: Shield
+    },
+    {
       name: "Harsh Patel",
       title: "Cyber & Digital Forensic Expert",
       image: "/lovable-uploads/23dabe31-f886-4475-a8a4-bc9a8ce83c63.png",
@@ -45,14 +53,6 @@ const Faculty = () => {
       quote: "Every post tells a story. I connect the dots to reveal the truth.",
       description: "Expert in OSINT and digital footprint tracing, Nakshatra leads the way in social media forensics, uncovering evidence across online platforms.",
       icon: Eye
-    },
-    {
-      name: "Viral Shah",
-      title: "CEO of CDFII",
-      image: "/lovable-uploads/a71336b3-4fab-46c9-a4b7-bce9ce882ae8.png",
-      quote: "Leadership is not about being in charge. It's about taking care of those in your charge.",
-      description: "Visionary founder and leader of CDFII. With a passion for digital integrity, Viral Shah champions hands-on, ethical training in cyber forensics to build a safer digital future.",
-      icon: Shield
     }
   ];
 

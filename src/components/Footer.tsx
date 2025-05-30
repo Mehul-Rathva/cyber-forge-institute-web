@@ -39,7 +39,6 @@ const Footer = () => {
               <li><Link to="/courses" className="text-gray-600 hover:text-[#00A693] transition-colors">Courses</Link></li>
               <li><Link to="/faculty" className="text-gray-600 hover:text-[#00A693] transition-colors">Faculty</Link></li>
               <li><Link to="/careers" className="text-gray-600 hover:text-[#00A693] transition-colors">Careers</Link></li>
-              <li><Link to="/resources" className="text-gray-600 hover:text-[#00A693] transition-colors">Resources</Link></li>
             </ul>
           </div>
 
@@ -55,9 +54,14 @@ const Footer = () => {
                 <Mail className="w-4 h-4 text-[#00A693]" />
                 <span className="text-gray-600">info@cdfii.in</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <MapPin className="w-4 h-4 text-[#00A693]" />
-                <span className="text-gray-600">New Delhi, India</span>
+              <div className="flex items-start space-x-2">
+                <MapPin className="w-4 h-4 text-[#00A693] mt-1" />
+                <span className="text-gray-600 text-sm">
+                  4th Floor, 402, Onyx Business Center,<br />
+                  Above Achieve Honda, Akshar Chowk,<br />
+                  Old Padra Road, Vadodara,<br />
+                  Gujarat, INDIA - 390012
+                </span>
               </div>
             </div>
           </div>

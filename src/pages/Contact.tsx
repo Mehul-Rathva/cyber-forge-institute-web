@@ -1,3 +1,4 @@
+
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -93,11 +94,13 @@ const Contact = () => {
                 <div className="flex items-start">
                   <MapPin className="w-6 h-6 text-[#00A693] mr-4 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-[#0A2540] mb-1">Address</h3>
+                    <h3 className="font-semibold text-[#0A2540] mb-1">Head Office Address</h3>
                     <p className="text-gray-600">
-                      123 Cyber Security Drive<br />
-                      Tech Campus, Suite 500<br />
-                      Innovation City, IC 12345
+                      Cyber & Digital Forensics Institute of India<br />
+                      4th Floor, 402, Onyx Business Center<br />
+                      Above Achieve Honda, Akshar Chowk<br />
+                      Old Padra Road, Vadodara<br />
+                      Gujarat, INDIA - 390012
                     </p>
                   </div>
                 </div>
@@ -171,7 +174,8 @@ const Contact = () => {
                 <span className="text-lg font-semibold text-[#0A2540]">Our Location</span>
               </div>
               <p className="text-gray-600">
-                Viral Shah, Vadodara, Gujarat, India
+                4th Floor, 402, Onyx Business Center, Above Achieve Honda,<br />
+                Akshar Chowk, Old Padra Road, Vadodara, Gujarat, INDIA - 390012
               </p>
             </div>
           </div>

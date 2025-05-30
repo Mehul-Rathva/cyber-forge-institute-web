@@ -11,9 +11,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/f6868bf5-da0e-4baf-818a-7a233b4df2e6.png" 
+                src="/lovable-uploads/360e0c9c-cfef-4b11-80cd-2ab5dabea33c.png" 
                 alt="CDFII Logo" 
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
               <span className="text-xl font-bold text-[#0A2540]">
                 Cyber & Digital Forensics Institute of India

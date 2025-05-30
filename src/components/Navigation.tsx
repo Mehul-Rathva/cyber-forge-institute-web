@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -20,13 +21,13 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50 border-b border-[#0A2540]/10">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/f6868bf5-da0e-4baf-818a-7a233b4df2e6.png" 
+              src="/lovable-uploads/360e0c9c-cfef-4b11-80cd-2ab5dabea33c.png" 
               alt="CDFII Logo" 
-              className="h-14 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 

@@ -145,12 +145,12 @@ const Index = () => {
         </div>
         
         {/* CDFII Logo */}
-        <div className="absolute top-20 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="absolute top-28 left-1/2 transform -translate-x-1/2 z-20">
           <div className="relative animate-float">
             <img 
-              src="/lovable-uploads/9f0266e7-62ef-4595-83e5-cc5e4eee607b.png" 
+              src="/lovable-uploads/360e0c9c-cfef-4b11-80cd-2ab5dabea33c.png" 
               alt="CDFII Logo" 
-              className="h-24 w-auto shadow-lg rounded-lg"
+              className="h-28 w-auto shadow-lg rounded-lg"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#00c2a8]/20 to-[#00c2a8]/10 rounded-lg animate-pulse"></div>
           </div>

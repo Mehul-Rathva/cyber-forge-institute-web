@@ -3,31 +3,31 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Briefcase, TrendingUp, DollarSign, Users } from 'lucide-react';
+import { Briefcase, TrendingUp, Users } from 'lucide-react';
 
 const Careers = () => {
   const careerPaths = [
     {
       title: "Digital Forensics Investigator",
-      salary: "$65,000 - $95,000",
+      salary: "65,000 - 95,000",
       growth: "22% growth",
       description: "Investigate cybercrimes and recover digital evidence for legal proceedings"
     },
     {
       title: "Incident Response Specialist",
-      salary: "$70,000 - $110,000",
+      salary: "70,000 - 110,000",
       growth: "18% growth",
       description: "Respond to security breaches and coordinate containment efforts"
     },
     {
       title: "Cybersecurity Analyst",
-      salary: "$60,000 - $90,000",
+      salary: "60,000 - 90,000",
       growth: "28% growth",
       description: "Monitor networks for security threats and implement protective measures"
     },
     {
       title: "Forensic Consultant",
-      salary: "$80,000 - $150,000",
+      salary: "80,000 - 150,000",
       growth: "15% growth",
       description: "Provide expert forensics services to organizations and law enforcement"
     }
@@ -44,7 +44,7 @@ const Careers = () => {
       </div>
       
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] relative">
+      <section className="pt-28 pb-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] relative">
         <div className="absolute inset-0 opacity-20">
           <div className="cyber-matrix-bg"></div>
         </div>
@@ -75,7 +75,7 @@ const Careers = () => {
                   
                   <div className="grid grid-cols-2 gap-4 mb-4">
                     <div className="flex items-center">
-                      <DollarSign className="w-4 h-4 text-[#00C851] mr-2" />
+                      <Users className="w-4 h-4 text-[#00C851] mr-2" />
                       <span className="text-sm text-gray-600">{career.salary}</span>
                     </div>
                     <div className="flex items-center">
@@ -110,7 +110,7 @@ const Careers = () => {
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow-lg border-2 border-[#0A2540]/20 hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <div className="text-4xl font-bold text-[#00C851] mb-4 animate-fade-in">$103K</div>
+              <div className="text-4xl font-bold text-[#00C851] mb-4 animate-fade-in">103K</div>
               <div className="text-gray-600">Average annual salary</div>
             </div>
           </div>

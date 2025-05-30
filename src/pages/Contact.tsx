@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -137,6 +136,43 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-20 bg-[#F8FFFE] relative">
+        <div className="container mx-auto px-4 relative z-10">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] bg-clip-text text-transparent">Find Us</h2>
+          
+          <div className="max-w-4xl mx-auto">
+            <Card className="shadow-lg border-2 border-[#0A2540]/20 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative w-full h-96">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7383.795029003658!2d73.15749663872545!3d22.281871713722065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc797b627f2f9%3A0xfa37b61378bac3a8!2sViral%20Shah!5e0!3m2!1sen!2sin!4v1748585995118!5m2!1sen!2sin"
+                    width="100%" 
+                    height="100%" 
+                    style={{border: 0}} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="CDFII Location Map"
+                    className="w-full h-full"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+            
+            <div className="mt-6 text-center">
+              <div className="flex items-center justify-center mb-2">
+                <MapPin className="w-5 h-5 text-[#00A693] mr-2" />
+                <span className="text-lg font-semibold text-[#0A2540]">Our Location</span>
+              </div>
+              <p className="text-gray-600">
+                Viral Shah, Vadodara, Gujarat, India
+              </p>
             </div>
           </div>
         </div>

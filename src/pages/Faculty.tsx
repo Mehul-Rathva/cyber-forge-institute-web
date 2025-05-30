@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -26,7 +25,7 @@ const Faculty = () => {
     {
       name: "Harsh Patel",
       title: "Cyber & Digital Forensic Expert",
-      image: "/lovable-uploads/b224862c-eab6-4fa3-9688-af0e779ec52f.png",
+      image: "/lovable-uploads/23dabe31-f886-4475-a8a4-bc9a8ce83c63.png",
       quote: "The truth is in the data—our job is to uncover it with accuracy and integrity.",
       description: "A seasoned investigator with years of experience in advanced evidence analysis, Harsh specializes in malware tracking and system forensics.",
       icon: Lock
@@ -127,14 +126,14 @@ const Faculty = () => {
                   <Card className="absolute inset-0 backface-hidden bg-white shadow-lg border-2 border-[#0A2540]/20 hover:shadow-xl transition-all duration-300">
                     <CardContent className="p-6 text-center h-full flex flex-col justify-between">
                       <div>
-                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-gradient-to-r from-[#0A2540] to-[#00A693]">
-                          <Avatar className="w-full h-full">
+                        <div className="w-32 h-32 mx-auto mb-4 overflow-hidden shadow-lg border-4 border-gradient-to-r from-[#0A2540] to-[#00A693] rounded-lg">
+                          <Avatar className="w-full h-full rounded-lg">
                             <AvatarImage 
                               src={member.image} 
                               alt={member.name}
-                              className="object-cover w-full h-full"
+                              className="object-cover w-full h-full rounded-lg"
                             />
-                            <AvatarFallback className="bg-gradient-to-r from-[#0A2540] to-[#00A693] text-white text-2xl">
+                            <AvatarFallback className="bg-gradient-to-r from-[#0A2540] to-[#00A693] text-white text-2xl rounded-lg">
                               {member.name.split(' ').map(n => n[0]).join('')}
                             </AvatarFallback>
                           </Avatar>

@@ -21,7 +21,7 @@ const Courses = () => {
       "Professional CCDFE certification upon completion",
       "Job placement assistance and career support"
     ],
-    price: "₹49,999",
+    price: "₹24,999",
     whoShouldAttend: [
       "Aspiring Cyber Forensic Investigators and Analysts",
       "IT/Network professionals seeking to specialize",

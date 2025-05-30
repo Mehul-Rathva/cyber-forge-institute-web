@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Award, BookOpen, Users, Star, Shield, Lock, Eye, ArrowUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Faculty = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -23,32 +24,36 @@ const Faculty = () => {
 
   const teamMembers = [
     {
-      name: "Viral Shah",
-      title: "CEO of CDFII",
-      quote: "Leadership is not about being in charge. It's about taking care of those in your charge.",
-      description: "Visionary founder and leader of CDFII. With a passion for digital integrity, Viral Shah champions hands-on, ethical training in cyber forensics to build a safer digital future.",
-      icon: Shield
-    },
-    {
       name: "Harsh Patel",
       title: "Cyber & Digital Forensic Expert",
+      image: "/lovable-uploads/b224862c-eab6-4fa3-9688-af0e779ec52f.png",
       quote: "The truth is in the data—our job is to uncover it with accuracy and integrity.",
       description: "A seasoned investigator with years of experience in advanced evidence analysis, Harsh specializes in malware tracking and system forensics.",
       icon: Lock
     },
     {
+      name: "Manan Patil",
+      title: "Cyber & Digital Forensic Expert",
+      image: "/lovable-uploads/042c2d10-68a3-46d1-8bb8-1cd10f0d1f0b.png",
+      quote: "In the world of zeros and ones, we find answers that protect and serve justice.",
+      description: "Manan specializes in binary-level analysis and data recovery. His work bridges deep tech and investigative logic in forensic environments.",
+      icon: Award
+    },
+    {
       name: "Nakshatra Thakkar",
       title: "Social Media Investigator",
+      image: "/lovable-uploads/c615536e-4f8e-4c7e-bb86-434cd018d232.png",
       quote: "Every post tells a story. I connect the dots to reveal the truth.",
       description: "Expert in OSINT and digital footprint tracing, Nakshatra leads the way in social media forensics, uncovering evidence across online platforms.",
       icon: Eye
     },
     {
-      name: "Manan Patil",
-      title: "Cyber & Digital Forensic Expert",
-      quote: "In the world of zeros and ones, we find answers that protect and serve justice.",
-      description: "Manan specializes in binary-level analysis and data recovery. His work bridges deep tech and investigative logic in forensic environments.",
-      icon: Award
+      name: "Viral Shah",
+      title: "CEO of CDFII",
+      image: "/lovable-uploads/a71336b3-4fab-46c9-a4b7-bce9ce882ae8.png",
+      quote: "Leadership is not about being in charge. It's about taking care of those in your charge.",
+      description: "Visionary founder and leader of CDFII. With a passion for digital integrity, Viral Shah champions hands-on, ethical training in cyber forensics to build a safer digital future.",
+      icon: Shield
     }
   ];
 
@@ -122,8 +127,17 @@ const Faculty = () => {
                   <Card className="absolute inset-0 backface-hidden bg-white shadow-lg border-2 border-[#0A2540]/20 hover:shadow-xl transition-all duration-300">
                     <CardContent className="p-6 text-center h-full flex flex-col justify-between">
                       <div>
-                        <div className="w-20 h-20 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-full mx-auto mb-4 flex items-center justify-center animate-pulse shadow-lg">
-                          <member.icon className="w-10 h-10 text-white" />
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg border-4 border-gradient-to-r from-[#0A2540] to-[#00A693]">
+                          <Avatar className="w-full h-full">
+                            <AvatarImage 
+                              src={member.image} 
+                              alt={member.name}
+                              className="object-cover w-full h-full"
+                            />
+                            <AvatarFallback className="bg-gradient-to-r from-[#0A2540] to-[#00A693] text-white text-2xl">
+                              {member.name.split(' ').map(n => n[0]).join('')}
+                            </AvatarFallback>
+                          </Avatar>
                         </div>
                         <h3 className="text-xl font-bold text-[#0A2540] mb-2">{member.name}</h3>
                         <p className="text-[#00A693] font-semibold mb-4">{member.title}</p>

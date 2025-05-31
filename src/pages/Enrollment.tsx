@@ -110,7 +110,7 @@ const Enrollment = () => {
                               <SelectValue placeholder="Select a program" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="ccdfe">Certified Cyber & Digital Forensic Examiner (CCDFE) - ₹49,999</SelectItem>
+                              <SelectItem value="ccdfe">Certified Cyber & Digital Forensic Examiner (CCDFE) - ₹24,999</SelectItem>
                               <SelectItem value="mobile">Mobile Forensics Module - ₹14,999</SelectItem>
                               <SelectItem value="network">Network Forensics Module - ₹14,999</SelectItem>
                               <SelectItem value="email">Email & Cloud Forensics Module - ₹14,999</SelectItem>
@@ -144,15 +144,15 @@ const Enrollment = () => {
                       <div className="space-y-3">
                         <label className="flex items-center space-x-3">
                           <Checkbox />
-                          <span className="text-gray-700">Full Payment (10% discount) - ₹44,999</span>
+                          <span className="text-gray-700">Full Payment (10% discount) - ₹22,499</span>
                         </label>
                         <label className="flex items-center space-x-3">
                           <Checkbox />
-                          <span className="text-gray-700">2 Installments - ₹25,000 each</span>
+                          <span className="text-gray-700">2 Installments - ₹12,999 each</span>
                         </label>
                         <label className="flex items-center space-x-3">
                           <Checkbox />
-                          <span className="text-gray-700">4 Installments - ₹12,999 each</span>
+                          <span className="text-gray-700">4 Installments - ₹6,999 each</span>
                         </label>
                       </div>
                     </div>
@@ -208,7 +208,7 @@ const Enrollment = () => {
                     
                     <div className="flex justify-between text-lg font-bold">
                       <span>Total:</span>
-                      <span className="text-[#00A693]">₹49,999</span>
+                      <span className="text-[#00A693]">₹24,999</span>
                     </div>
                     
                     <div className="mt-6 space-y-3">

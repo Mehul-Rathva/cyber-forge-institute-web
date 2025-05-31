@@ -146,7 +146,7 @@ const Index = () => {
         
         {/* CDFII Logo */}
         <div className="absolute top-28 left-1/2 transform -translate-x-1/2 z-20">
-          <div className="relative animate-float">
+          <div className="relative">
             <img 
               src="/lovable-uploads/15ea19b8-68ce-4c20-955d-e09b133de5fd.png" 
               alt="CDFII Logo" 
@@ -196,9 +196,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Intro Section */}
+      {/* About CDFII Section */}
       <section className="py-16 bg-white relative">
         <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-[#0A2540] to-[#00A693] bg-clip-text text-transparent">
+            About CDFII
+          </h2>
           <p className="text-lg text-gray-600 max-w-6xl mx-auto leading-relaxed">
             Cyber & Digital Forensics Institute of India (CDFII) is a premier training academy empowering the next generation of cyber investigators. 
             We combine cutting-edge technology with real-world case simulations so you learn by doing, not just by watching. With industry-standard 

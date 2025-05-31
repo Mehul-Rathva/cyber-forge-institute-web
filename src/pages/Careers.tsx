@@ -3,31 +3,27 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Briefcase, TrendingUp, Users } from 'lucide-react';
+import { Briefcase, TrendingUp } from 'lucide-react';
 
 const Careers = () => {
   const careerPaths = [
     {
       title: "Digital Forensics Investigator",
-      salary: "65,000 - 95,000",
       growth: "22% growth",
       description: "Investigate cybercrimes and recover digital evidence for legal proceedings"
     },
     {
       title: "Incident Response Specialist",
-      salary: "70,000 - 110,000",
       growth: "18% growth",
       description: "Respond to security breaches and coordinate containment efforts"
     },
     {
       title: "Cybersecurity Analyst",
-      salary: "60,000 - 90,000",
       growth: "28% growth",
       description: "Monitor networks for security threats and implement protective measures"
     },
     {
       title: "Forensic Consultant",
-      salary: "80,000 - 150,000",
       growth: "15% growth",
       description: "Provide expert forensics services to organizations and law enforcement"
     }
@@ -73,11 +69,7 @@ const Careers = () => {
                     <h3 className="text-xl font-bold text-[#0A2540]">{career.title}</h3>
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-4 mb-4">
-                    <div className="flex items-center">
-                      <Users className="w-4 h-4 text-[#00C851] mr-2" />
-                      <span className="text-sm text-gray-600">{career.salary}</span>
-                    </div>
+                  <div className="mb-4">
                     <div className="flex items-center">
                       <TrendingUp className="w-4 h-4 text-[#00A693] mr-2" />
                       <span className="text-sm text-gray-600">{career.growth}</span>

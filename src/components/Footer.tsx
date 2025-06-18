@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Youtube, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -24,10 +24,34 @@ const Footer = () => {
               Empowering the next generation of cybersecurity professionals.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="w-5 h-5 text-gray-400 hover:text-[#00A693] cursor-pointer transition-colors" />
-              <Twitter className="w-5 h-5 text-gray-400 hover:text-[#00A693] cursor-pointer transition-colors" />
-              <Instagram className="w-5 h-5 text-gray-400 hover:text-[#00A693] cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-gray-400 hover:text-[#00A693] cursor-pointer transition-colors" />
+              <a 
+                href="https://www.facebook.com/share/197WuS1wkh/?mibextid=wwXIfr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Facebook className="w-5 h-5 text-gray-400 hover:text-[#00A693] cursor-pointer transition-colors" />
+              </a>
+              <a 
+                href="https://youtube.com/@cdfii-p3l?si=NPUbcXwFhnKNKrAr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Youtube className="w-5 h-5 text-gray-400 hover:text-[#00A693] cursor-pointer transition-colors" />
+              </a>
+              <a 
+                href="https://www.instagram.com/cdfii_in?igsh=ZjN2ODF3emh3dXdn" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Instagram className="w-5 h-5 text-gray-400 hover:text-[#00A693] cursor-pointer transition-colors" />
+              </a>
+              <a 
+                href="http://linkedin.com/in/cdfii-067762369/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Linkedin className="w-5 h-5 text-gray-400 hover:text-[#00A693] cursor-pointer transition-colors" />
+              </a>
             </div>
           </div>
 

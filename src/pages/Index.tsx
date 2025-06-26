@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -9,7 +8,6 @@ import Footer from '@/components/Footer';
 import AnimatedCounter from '@/components/AnimatedCounter';
 import CourseCard from '@/components/CourseCard';
 import TestimonialSlider from '@/components/TestimonialSlider';
-import TimelineMilestones from '@/components/TimelineMilestones';
 import ParticleNetwork from '@/components/ParticleNetwork';
 
 const Index = () => {
@@ -114,7 +112,7 @@ const Index = () => {
         <div className="absolute inset-0 z-10">
           {/* Binary Code Animation */}
           <div className="absolute top-10 left-10 text-[#00c2a8] font-mono text-xs opacity-60 animate-pulse">
-            01001000 01100001 01100011 01101011<br/>
+            01001000 01100001 01100011 01100011 01101011<br/>
             01000011 01111001 01100010 01100101<br/>
             01110010 00100000 01000110 01101111
           </div>
@@ -266,9 +264,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Timeline Milestones */}
-      <TimelineMilestones />
 
       {/* Testimonials */}
       <TestimonialSlider />

@@ -35,6 +35,15 @@ const CourseDetail = () => {
     "Anyone interested in digital forensics field"
   ];
 
+  const downloadBrochure = () => {
+    const link = document.createElement('a');
+    link.href = '/CDFII Course Package.pdf';
+    link.download = 'CDFII Course Package.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -182,7 +191,10 @@ const CourseDetail = () => {
                           Enroll Now
                         </Button>
                       </Link>
-                      <Button className="flex-1 bg-cyan-500 hover:bg-cyan-600 text-white py-3">
+                      <Button 
+                        className="flex-1 bg-cyan-500 hover:bg-cyan-600 text-white py-3"
+                        onClick={downloadBrochure}
+                      >
                         Download Brochure
                       </Button>
                     </div>

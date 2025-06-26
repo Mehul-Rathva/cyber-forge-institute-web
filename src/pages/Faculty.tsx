@@ -93,19 +93,7 @@ const Faculty = () => {
       <section className="pt-24 pb-12 bg-gradient-to-r from-[#0A2540] to-[#00A693] relative">
         <div className="absolute inset-0 cyber-grid opacity-20"></div>
         
-        {/* Animated CDFII Logo */}
-        <div className="absolute top-20 left-1/2 transform -translate-x-1/2 z-10">
-          <div className="relative">
-            <div className="w-24 h-24 bg-gradient-to-r from-[#0A2540] to-[#00A693] rounded-lg flex items-center justify-center text-white font-bold text-xl animate-float shadow-lg">
-              CDFII
-            </div>
-            <div className="absolute inset-0 w-24 h-24 bg-gradient-to-r from-[#00A693] to-[#00C851] rounded-lg flex items-center justify-center text-white font-bold text-xl opacity-0 animate-ping">
-              CDFII
-            </div>
-          </div>
-        </div>
-        
-        <div className="container mx-auto px-4 text-center relative z-10 mt-16">
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-5xl font-bold text-white mb-6 animate-fade-in">Our Creative Team</h1>
           <p className="text-xl text-[#E8F4F8] max-w-4xl mx-auto">
             At CDFII, our team of visionary leaders and forensic experts is dedicated to innovation, 

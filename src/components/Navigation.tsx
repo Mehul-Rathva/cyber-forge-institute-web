@@ -46,15 +46,6 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Enroll Button */}
-          <div className="hidden lg:block">
-            <Link to="/enrollment">
-              <Button className="bg-gradient-to-r from-[#0A2540] to-[#00A693] hover:from-[#0A2540]/90 hover:to-[#00A693]/90 text-white px-6 py-2 rounded-full">
-                Enroll Now
-              </Button>
-            </Link>
-          </div>
-
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button
@@ -82,11 +73,6 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <Link to="/enrollment" onClick={() => setIsOpen(false)}>
-                <Button className="bg-gradient-to-r from-[#0A2540] to-[#00A693] hover:from-[#0A2540]/90 hover:to-[#00A693]/90 text-white px-6 py-2 rounded-full w-full">
-                  Enroll Now
-                </Button>
-              </Link>
             </div>
           </div>
         )}

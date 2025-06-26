@@ -54,9 +54,9 @@ const CTASection = () => {
           >
             Download Brochure
           </Button>
-          <Link to="/enrollment">
+          <Link to="/contact">
             <Button className="bg-gradient-to-r from-[#00A693] to-[#00C851] hover:from-[#00A693]/90 hover:to-[#00C851]/90 text-white px-8 py-4 text-lg rounded-lg font-semibold shadow-lg shadow-[#00A693]/25">
-              Enroll Now
+              Contact Us
             </Button>
           </Link>
         </div>

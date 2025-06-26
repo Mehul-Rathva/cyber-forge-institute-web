@@ -185,18 +185,21 @@ const CourseDetail = () => {
                       Join thousands of successful graduates and become a certified digital forensics expert. 
                       Secure your spot in our next batch today!
                     </p>
+                    <div className="text-center mb-6">
+                      <span className="text-4xl font-bold text-white">{courseInfo.fee}</span>
+                    </div>
                     <div className="flex flex-col sm:flex-row gap-4">
-                      <Link to="/enrollment" className="flex-1">
-                        <Button className="w-full bg-white text-blue-600 hover:bg-gray-100 py-3">
-                          Enroll Now
-                        </Button>
-                      </Link>
                       <Button 
-                        className="flex-1 bg-cyan-500 hover:bg-cyan-600 text-white py-3"
+                        className="flex-1 bg-white text-blue-600 hover:bg-gray-100 py-3"
                         onClick={downloadBrochure}
                       >
                         Download Brochure
                       </Button>
+                      <Link to="/contact" className="flex-1">
+                        <Button className="w-full bg-cyan-500 hover:bg-cyan-600 text-white py-3">
+                          Contact Us
+                        </Button>
+                      </Link>
                     </div>
                     <p className="text-sm text-blue-100 mt-4">
                       <Shield className="w-4 h-4 inline mr-1" />

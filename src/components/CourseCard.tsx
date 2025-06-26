@@ -78,11 +78,11 @@ const CourseCard = ({ course }: CourseCardProps) => {
                   Learn More
                 </Button>
               </Link>
-              <Link to="/enrollment" onClick={(e) => e.stopPropagation()}>
-                <Button className="w-full bg-[#00C851] hover:bg-[#00C851]/90 text-white">
-                  Enroll Now
-                </Button>
-              </Link>
+              <div className="text-center">
+                <span className="text-2xl font-bold text-white">
+                  {course.price}
+                </span>
+              </div>
             </div>
           </div>
         </Card>

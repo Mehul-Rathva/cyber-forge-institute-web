@@ -157,11 +157,6 @@ const Courses = () => {
                           Learn More
                         </Button>
                       </Link>
-                      <Link to="/enrollment">
-                        <Button className="w-full bg-white text-[#00A693] border-2 border-[#00A693] hover:bg-[#E0F2E6] transform hover:scale-105 transition-all duration-300">
-                          Enroll Now
-                        </Button>
-                      </Link>
                     </div>
                   </div>
                   
@@ -227,11 +222,9 @@ const Courses = () => {
                         Learn More
                       </Button>
                     </Link>
-                    <Link to="/enrollment">
-                      <Button className="w-full bg-white text-[#00A693] border border-[#00A693] hover:bg-[#E0F2E6] transform hover:scale-105 transition-all duration-300">
-                        Enroll
-                      </Button>
-                    </Link>
+                    <div className="text-center p-2 bg-[#E0F2E6] rounded-lg">
+                      <span className="text-lg font-bold text-[#0A2540]">{course.price}</span>
+                    </div>
                   </div>
                 </CardContent>
               </Card>

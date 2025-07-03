@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Lock, Shield, Smartphone, Laptop, Book } from 'lucide-react';
@@ -69,7 +70,7 @@ const HeroSection = () => {
         <div className="mb-8 sm:mb-10 lg:mb-12">
           <div className="relative inline-block">
             <img 
-              src="/lovable-uploads/d5273188-0793-4a89-8172-904f80607fce.png" 
+              src="/lovable-uploads/15ea19b8-68ce-4c20-955d-e09b133de5fd.png" 
               alt="CDFII Logo" 
               className="h-16 sm:h-18 lg:h-20 w-auto shadow-lg rounded-lg mx-auto"
             />
@@ -77,7 +78,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-[#00c2a8] via-white to-[#00c2a8] bg-clip-text text-transparent animate-fade-in leading-tight">
           UNLOCK THE TRUTH
           <br />

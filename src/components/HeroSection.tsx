@@ -61,29 +61,29 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* CDFII Logo - Responsive positioning and sizing */}
-      <div className="absolute top-20 sm:top-24 lg:top-28 left-1/2 transform -translate-x-1/2 z-20">
+      {/* CDFII Logo - Improved responsive positioning and sizing */}
+      <div className="absolute top-4 sm:top-8 md:top-16 lg:top-20 left-1/2 transform -translate-x-1/2 z-20">
         <div className="relative">
           <img 
             src="/lovable-uploads/15ea19b8-68ce-4c20-955d-e09b133de5fd.png" 
             alt="CDFII Logo" 
-            className="h-16 sm:h-18 lg:h-20 w-auto shadow-lg rounded-lg"
+            className="h-12 sm:h-14 md:h-16 lg:h-18 xl:h-20 w-auto shadow-lg rounded-lg max-w-[200px] sm:max-w-none"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#00c2a8]/20 to-[#00c2a8]/10 rounded-lg animate-pulse"></div>
         </div>
       </div>
 
-      {/* Hero Content - Responsive typography and spacing */}
-      <div className={`relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto transition-all duration-1000 transform ${
+      {/* Hero Content - Adjusted top margin to account for logo */}
+      <div className={`relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto transition-all duration-1000 transform mt-16 sm:mt-20 md:mt-24 lg:mt-28 ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
       }`}>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-[#00c2a8] via-white to-[#00c2a8] bg-clip-text text-transparent animate-fade-in leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-[#00c2a8] via-white to-[#00c2a8] bg-clip-text text-transparent animate-fade-in leading-tight">
           UNLOCK THE TRUTH
           <br />
-          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">OF THE DIGITAL WORLD</span>
+          <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">OF THE DIGITAL WORLD</span>
         </h1>
         <div className="relative mb-6 sm:mb-8">
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed px-2">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed px-2">
             Hands-on <span className="text-[#00c2a8] font-semibold">Cyber & Digital Forensic</span> Training from Industry Experts
           </p>
           <div className="absolute -inset-4 bg-gradient-to-r from-[#00c2a8]/10 to-[#00c2a8]/5 blur-lg rounded-lg animate-pulse"></div>

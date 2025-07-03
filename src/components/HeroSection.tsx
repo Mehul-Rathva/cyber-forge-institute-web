@@ -60,23 +60,24 @@ const HeroSection = () => {
           <Shield className="w-7 h-7 sm:w-9 sm:h-9 text-[#00c2a8] opacity-70" />
         </div>
       </div>
-      
-      {/* CDFII Logo - Responsive positioning and sizing */}
-      <div className="absolute top-20 sm:top-24 lg:top-28 left-1/2 transform -translate-x-1/2 z-20">
-        <div className="relative">
-          <img 
-            src="/lovable-uploads/15ea19b8-68ce-4c20-955d-e09b133de5fd.png" 
-            alt="CDFII Logo" 
-            className="h-16 sm:h-18 lg:h-20 w-auto shadow-lg rounded-lg"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#00c2a8]/20 to-[#00c2a8]/10 rounded-lg animate-pulse"></div>
-        </div>
-      </div>
 
       {/* Hero Content - Responsive typography and spacing */}
       <div className={`relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto transition-all duration-1000 transform ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
       }`}>
+        
+        {/* CDFII Logo - Positioned above the main heading */}
+        <div className="mb-8 sm:mb-10 lg:mb-12">
+          <div className="relative inline-block">
+            <img 
+              src="/lovable-uploads/15ea19b8-68ce-4c20-955d-e09b133de5fd.png" 
+              alt="CDFII Logo" 
+              className="h-16 sm:h-18 lg:h-20 w-auto shadow-lg rounded-lg mx-auto"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#00c2a8]/20 to-[#00c2a8]/10 rounded-lg animate-pulse"></div>
+          </div>
+        </div>
+
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-[#00c2a8] via-white to-[#00c2a8] bg-clip-text text-transparent animate-fade-in leading-tight">
           UNLOCK THE TRUTH
           <br />

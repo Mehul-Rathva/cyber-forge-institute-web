@@ -61,20 +61,20 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* CDFII Logo - Fixed positioning and sizing for all devices */}
-      <div className="absolute top-6 sm:top-8 md:top-12 lg:top-16 left-1/2 transform -translate-x-1/2 z-20 w-full px-4">
-        <div className="relative flex justify-center">
+      {/* CDFII Logo - Improved responsive positioning and sizing */}
+      <div className="absolute top-4 sm:top-8 md:top-16 lg:top-20 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="relative">
           <img 
             src="/lovable-uploads/15ea19b8-68ce-4c20-955d-e09b133de5fd.png" 
             alt="CDFII Logo" 
-            className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-18 w-auto shadow-2xl rounded-lg bg-white/10 backdrop-blur-sm p-2"
+            className="h-12 sm:h-14 md:h-16 lg:h-18 xl:h-20 w-auto shadow-lg rounded-lg max-w-[200px] sm:max-w-none"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#00c2a8]/30 to-[#00c2a8]/20 rounded-lg animate-pulse"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#00c2a8]/20 to-[#00c2a8]/10 rounded-lg animate-pulse"></div>
         </div>
       </div>
 
-      {/* Hero Content - Adjusted spacing for logo */}
-      <div className={`relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto transition-all duration-1000 transform mt-20 sm:mt-24 md:mt-28 lg:mt-32 ${
+      {/* Hero Content - Adjusted top margin to account for logo */}
+      <div className={`relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto transition-all duration-1000 transform mt-16 sm:mt-20 md:mt-24 lg:mt-28 ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
       }`}>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-[#00c2a8] via-white to-[#00c2a8] bg-clip-text text-transparent animate-fade-in leading-tight">
